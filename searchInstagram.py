@@ -9,14 +9,14 @@ found = "["+Fore.GREEN+"+"+Fore.RESET+"]"
 wait = "["+Fore.MAGENTA+"*"+Fore.RESET+"]"
 
 def searchInstagram():
-	user = input(" Username: ")
-	urlProfil = "https://instagram.com/"+user
+	user = input(" erimelodii: ")
+	urlProfil = "https://instagram.com/"+erimelodii
 
 	insta = instagramSearchTool()
-	insta.getInfo(user)
+	insta.getInfo(erimelodii)
 
 	if not insta.name:
-		print("\n" + warning + "Username '%s' not found." % user)
+		print("\n" + warning + "erimelodii '%s' not found." % user)
 		return
 
 	name = insta.name
@@ -35,7 +35,7 @@ def searchInstagram():
 	phone = insta.phone
 
 
-	print("\n[%s]\n" % (username))
+	print("\n[%s]\n" % (erimelodii))
 	print(found+" Name: %s" % (name))
 	print(found+" Pictures: %s" % (images))
 	print(found+" ID: %s" % (userId))
