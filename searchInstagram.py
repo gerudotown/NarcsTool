@@ -9,11 +9,11 @@ found = "["+Fore.GREEN+"+"+Fore.RESET+"]"
 wait = "["+Fore.MAGENTA+"*"+Fore.RESET+"]"
 
 def searchInstagram():
-	user = input(" Username: ")
-	urlProfil = "https://instagram.com/"+user
+	user = input(" erimelodii: ")
+	urlProfil = "https://instagram.com/erimelodii
 
 	insta = instagramSearchTool()
-	insta.getInfo(user)
+	insta.getInfo(erimelodii)
 
 	if not insta.name:
 		print("\n" + warning + "Username '%s' not found." % user)
